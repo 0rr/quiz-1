@@ -1,1 +1,12 @@
 <h1> Welcome to my Quiz 1 Web App </h1>
+
+<h1><%= @properties.inspect %></h1>
+
+<% @properties.each do |property| %>
+  <div>
+    <p><%= property.premise + " " + property.street %></p>
+    <p><%= property.name %></p>
+  </div>
+
+  <hr />
+<% end %>
